@@ -21,7 +21,7 @@ body {
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 140px;
     position: absolute;
@@ -47,7 +47,7 @@ body {
 
 /* Social Icons */
 .social-icons {
-    padding-right: 140px;
+    padding-right: 10px;
 }
 
 .social-icons a {
@@ -63,16 +63,17 @@ body {
 
 /* Main Navbar */
 .navbar {
-    width: 80%;
+    height: 70px;
+    width: 70%;
     /* Reduces width to add spacing on sides */
     max-width: 1100px;
-    
+
     /* Prevents it from stretching too wide on large screens */
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    top: 60px;
+    top: 50px;
     /* Slightly below the topbar */
     left: 50%;
     transform: translateX(-50%);
@@ -82,7 +83,7 @@ body {
     backdrop-filter: blur(px);
     /* Glassmorphism effect */
     padding: 15px 30px;
-    border-radius: 25px;
+    border-radius: 15px;
     /* Rounded corners */
     z-index: 999;
 }
@@ -158,7 +159,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(22, 100, 131, 0.36);
     /* Dark overlay effect */
     z-index: -1;
     /* Pushes it behind the content */
@@ -175,30 +176,91 @@ body {
     margin-bottom: 20px;
 }
 
-/* Optional: Hero Subtitle */
-.hero p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    max-width: 700px;
-    line-height: 1.5;
-    opacity: 0.9;
+.hero h1 span {
+    color: #00CBFF;
 }
 
-/* Hero CTA Button */
-.hero .cta-btn {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    font-weight: bold;
+/* seach bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    border-radius: 50px;
+    width: 50%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: rgba(7, 7, 7, 0.7);
+}
+
+.search-button {
+
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.search-button i {
+    font-size: 18px;
+    background-color: white;
+}
+
+/* in the heor section */
+.explore-text {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
     color: white;
-    background-color: #0a3d62;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Space between text and heart icon */
 }
 
-.hero .cta-btn:hover {
-    background-color: #083152;
+.explore-text i {
+    color: #ffffff;
+    /* Light pink heart */
+    font-size: 20px;
+}
+
+/* product images */
+.product-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* Space between logos */
+    margin-top: 45px;
+    /* Space below the text */
+}
+
+.product-logo {
+    max-width: 200px;
+    /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-logo:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+
 }

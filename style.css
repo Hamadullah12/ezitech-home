@@ -61,6 +61,10 @@ body {
     color: #f39c12;
 }
 
+.Hamburger {
+    display: none;
+}
+
 /* Main Navbar */
 .navbar {
     height: 70px;
@@ -72,7 +76,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 50px;
     /* Slightly below the topbar */
     left: 50%;
@@ -167,13 +171,15 @@ body {
 
 /* Hero Text Styling */
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     /* Adjust as needed */
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     max-width: 900px;
     /* Limit width for readability */
     margin-bottom: 20px;
+    margin-top: 200px;
+
 }
 
 .hero h1 span {
@@ -189,7 +195,7 @@ body {
     border-radius: 50px;
     width: 50%;
     max-width: 500px;
-    margin: 20px auto;
+    margin-top: 60px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -265,177 +271,24 @@ body {
 
 }
 
+/* logo sweiper effect css */
+
+.logo-slider-section {
+    padding-top: 50px;
+    background-color: #f8f9fa;
+    /* Light background */
+}
+
+.logo-slider-section .swiper {
+    width: 9 0%;
+    margin: auto;
+}
+
+.logo-slider-section .swiper-slide img {
+    width: 100px;
+    height: auto;
+}
+
 
 /* ==================================================== */
 /* responsive section */
-
-/* responsive for mobile screen for navbar and hero section  */
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-
-    /* Hide the topbar on mobile */
-    .topbar {
-        display: none;
-    }
-
-    /* Navbar adjustments */
-    .navbar {
-        width: 100%;
-        height: 60px;
-        padding: 10px 15px;
-        background: rgba(0, 0, 0, 0.7);
-        /* Adding a slight transparent black bg */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Hide menu by default on mobile */
-    /* General Navbar Styling */
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background: #fff;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Logo Styling */
-    .logo img {
-        width: 120px;
-        /* Adjust based on your design */
-    }
-
-    /* Navigation Links */
-    .nav-links {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-    }
-
-    /* Links */
-    .nav-links li {
-        padding: 10px;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
-
-    /* ========== MOBILE RESPONSIVENESS ========== */
-
-    /* Hide menu by default on mobile */
-    @media (max-width: 768px) {
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 10px;
-            background: white;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        /* Show menu when toggled */
-        .show-menu {
-            display: flex;
-        }
-
-        /* Style the hamburger icon */
-        .menu-icon {
-            font-size: 24px;
-            cursor: pointer;
-            display: block;
-        }
-    }
-
-    /* Hide hamburger icon and show menu normally on large screens */
-    @media (min-width: 769px) {
-        .menu-icon {
-            display: none;
-        }
-
-        .nav-links {
-            display: flex;
-            position: static;
-            background: none;
-            box-shadow: none;
-            flex-direction: row;
-            width: auto;
-            padding: 0;
-        }
-    }
-
-    .login-btn {
-        font-size: 14px;
-        padding: 8px 15px;
-        background-color: #003366;
-        /* Dark blue button */
-        color: white;
-        border-radius: 5px;
-    }
-
-    /* Hero Section */
-    .hero {
-        height: 85vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        color: white;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-        max-width: 90%;
-    }
-
-    .search-container {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: white;
-        border-radius: 25px;
-        padding: 5px 10px;
-        margin-top: 15px;
-    }
-
-    .search-container input {
-        width: 85%;
-        border: none;
-        outline: none;
-        padding: 8px;
-    }
-
-    .search-container button {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Product Logos Section */
-    .product-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 20px;
-    }
-
-    .product-logo {
-        max-width: 100px;
-    }
-}

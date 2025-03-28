@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EZITECH Navbar</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -40,7 +46,7 @@
       <div class="logo">
         <img src="./assets/logos/logo.png" width="145" height="52" alt="" />
         <!-- Hamburger Icon -->
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="Hamburger" onclick="toggleMenu()">☰</div>
       </div>
       <ul id="nav-menu" class="nav-links">
         <li><a href="#">Home</a></li>
@@ -91,6 +97,77 @@
       </div>
     </section>
 
+    <!-- logos swiper  -->
+    <!-- Logo Slider Section -->
+    <section class="logo-slider-section">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/swiper-effect-images/html.png" alt="HTML" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/java-2-1024x400.png"
+              alt="javascript"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/java-1024x277.png"
+              alt="Java"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/swiper-effect-images/react.png" alt="React" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/nodejs-1024x287.png"
+              alt="Node.js"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/game-maker-2.png"
+              alt="game-maker-2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/adobe-xd.png"
+              alt="adobe-xd"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/figma-2-1024x297.png"
+              alt="Figma"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/blender-1024x253.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/swiper-effect-images/laravel.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/swiper-effect-images/vujs.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/swiper-effect-images/wordpress-1-1024x263.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

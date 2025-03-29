@@ -593,3 +593,150 @@ h2 {
         text-align: center;
     }
 }
+
+
+/* services card */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    width: 330px;
+    height: auto;
+    /* Adjust height automatically */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    flex: 1 1 330px;
+    /* Ensures three cards per row on large screens */
+    max-width: 330px;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 63px;
+    height: 63px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #555555a6;
+}
+
+.service-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .services-container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        /* Full width on mobile */
+        max-width: none;
+    }
+}
+
+/* testemonail styling  */
+
+.testimonial-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: auto;
+}
+
+.swiper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+.testimonial-card .role {
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

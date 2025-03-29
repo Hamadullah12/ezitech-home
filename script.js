@@ -65,3 +65,24 @@ function animateCounters() {
 }
 
 document.addEventListener("DOMContentLoaded", animateCounters);
+
+// swiper js animation for testemonial
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3, // Show 3 slides at a time
+  spaceBetween: 20,
+  loop: true, // Infinite Loop
+  autoplay: {
+    delay: 0, // No delay
+    disableOnInteraction: false,
+  },
+  speed: 4000, // Continuous scroll speed
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+  },
+});

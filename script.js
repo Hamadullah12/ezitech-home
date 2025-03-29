@@ -25,3 +25,43 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// animated counter
+
+function animateCounters() {
+  const counters = document.querySelectorAll(".counter-number");
+  const section = document.querySelector(".counter-section");
+
+  function startCounting(entries) {
+    if (entries[0].isIntersecting) {
+      counters.forEach((counter) => {
+        counter.style.opacity = 1;
+        counter.style.transform = "translateY(0px)";
+
+        let target = +counter.getAttribute("data-target");
+        let suffix = counter.getAttribute("data-suffix") || "";
+        let count = 0;
+        let speed = target / 100;
+
+        let updateCounter = () => {
+          if (count < target) {
+            count += speed;
+            counter.innerText = Math.ceil(count) + suffix;
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.innerText = target + suffix;
+          }
+        };
+
+        updateCounter();
+      });
+
+      observer.disconnect(); // Stop observing after animation
+    }
+  }
+
+  let observer = new IntersectionObserver(startCounting, { threshold: 0.5 });
+  observer.observe(section);
+}
+
+document.addEventListener("DOMContentLoaded", animateCounters);

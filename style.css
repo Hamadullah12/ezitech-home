@@ -12,7 +12,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: #a9c9e9;
+    background-color: #ffffff;
 }
 
 /* Topbar styles */
@@ -290,5 +290,306 @@ body {
 }
 
 
-/* ==================================================== */
-/* responsive section */
+/* process section styling empowring  */
+
+.process-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-heading {
+    font-family: poppins, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #222;
+    text-align: center;
+    margin-right: 120px;
+    padding-left: 130px;
+}
+
+/* Cards Container */
+.process-steps {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.step-card {
+    position: relative;
+    background: white;
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Step Title */
+.step-title {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+/* Number Positioning */
+.step-number {
+
+    position: absolute;
+    top: -40px;
+    right: 15px;
+    font-size: 192px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+/* Card Title */
+.step-card h3 {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+    margin: 10px 0;
+}
+
+/* Card Description */
+.step-description {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #555;
+}
+
+/* bugs here */
+/* empowering aniation styling */
+/* General Styles */
+
+
+/* Main Container */
+.empowering-container {
+    max-width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+/* Image Section */
+.image-section {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Image Grid */
+.image-grid {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Images */
+.image-grid img,
+.large-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlapping Effect */
+.image-grid img:first-child {
+    position: relative;
+    z-index: 2;
+    width: 272px;
+    height: 363px;
+}
+
+.image-grid .smallimage {
+    width: 256px;
+    height: 246px;
+    z-index: 4;
+}
+
+.large-image {
+    position: absolute;
+    bottom: -120px;
+    left: 25%;
+    top: 190px;
+    width: 322px;
+    height: 326px;
+    z-index: 3;
+}
+
+/* Content Section */
+.content-section {
+    font-family: sans-serif;
+    width: 50%;
+    padding-left: 140px;
+}
+
+/* Badge */
+.badge {
+    background: #e0f2fe;
+    color: #1e40af;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Heading */
+h2 {
+    font-size: 38px;
+    font-weight: bold;
+    width: 100%;
+    color: #111827;
+}
+
+.highlight {
+    color: #2563eb;
+}
+
+/* Paragraphs */
+.content-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin-top: 40px;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* Button */
+.cta-button {
+    margin-top: 20px;
+    padding: 25px 44px;
+    background: #2563eb;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #1e40af;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .empowering-container {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .content-section {
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+    .cta-button {
+        width: 100%;
+    }
+}
+
+
+/* animated counter */
+
+/* Section Container */
+.counter-section {
+    max-width: 100%;
+    width: 90%;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 140px;
+}
+
+/* Grid Layout */
+.counter-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Left Content */
+.counter-text {
+    max-width: 500px;
+    padding-left: 40px;
+}
+
+.counter-text h2 {
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.counter-text p {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #666666d7;
+}
+
+/* Right Side - Counters */
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.counter-item {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.counter-number {
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #06213dc7;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.counter-text {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4444448c;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .counter-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

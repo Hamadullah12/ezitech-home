@@ -1,27 +1,21 @@
-// function toggleMenu() {
-//   let menu = document.getElementById("nav-menu");
-//   menu.classList.toggle("show-menu");
-// }
-
 // logos swipper effect animation
 
-// Initialize Swiper for continuous scrolling effect
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 6, // Show 6 logos at a time
-  spaceBetween: 30, // Space between logos
-  loop: false, // Disable infinite loop
-  speed: 3000, // Smooth scrolling speed
+  slidesPerView: 6,
+  spaceBetween: 30,
+  loop: false,
+  speed: 3000,
   autoplay: {
     delay: 0, // No delay
     disableOnInteraction: false, // Keeps autoplay even when user interacts
   },
-  allowTouchMove: true, // Disable manual dragging
+  allowTouchMove: true, //
   on: {
     reachEnd: function () {
       setTimeout(() => {
-        swiper.slideTo(0, 0); // Instantly jump back to start
+        swiper.slideTo(0, 0);
         swiper.autoplay.start(); // Restart autoplay
-      }, 500); // Small delay before restarting
+      }, 500);
     },
   },
 });
@@ -67,16 +61,15 @@ function animateCounters() {
 document.addEventListener("DOMContentLoaded", animateCounters);
 
 // swiper js animation for testemonial
-// Testimonials Swiper (Separate)
 var testimonialSwiper = new Swiper(".testimonialSwiper", {
-  slidesPerView: 3, // Display 3 testimonials at a time
+  slidesPerView: 3,
   spaceBetween: 20,
-  loop: true, // Infinite loop
+  loop: true,
   autoplay: {
-    delay: 0, // Continuous animation
+    delay: 0,
     disableOnInteraction: false,
   },
-  speed: 4000, // Smooth infinite scrolling
+  speed: 4000,
   breakpoints: {
     768: {
       slidesPerView: 3,

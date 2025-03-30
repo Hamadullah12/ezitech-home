@@ -748,3 +748,61 @@ h2 {
     font-size: 14px;
     text-align: left;
 }
+
+/* socail media icon stying */
+
+.social-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+
+    text-align: center;
+}
+
+.social-box {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-box i {
+    font-size: 80px;
+    /* color: #0077b5; */
+    padding: 35px;
+    border-radius: 50%;
+
+}
+
+.social-box h4 {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #2c2e30;
+}
+
+.social-box p {
+    font-family: sans-serif;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* Icon Colors */
+.linkedin i {
+    color: #6c757d;
+}
+
+.youtube i {
+    color: #6c757d;
+}
+
+.facebook i {
+    color: #6c757d;
+}
+
+.whatsapp i {
+    color: #6c757d;
+}

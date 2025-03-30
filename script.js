@@ -67,19 +67,19 @@ function animateCounters() {
 document.addEventListener("DOMContentLoaded", animateCounters);
 
 // swiper js animation for testemonial
-
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3, // Show 3 slides at a time
+// Testimonials Swiper (Separate)
+var testimonialSwiper = new Swiper(".testimonialSwiper", {
+  slidesPerView: 3, // Display 3 testimonials at a time
   spaceBetween: 20,
-  loop: true, // Infinite Loop
+  loop: true, // Infinite loop
   autoplay: {
-    delay: 0, // No delay
+    delay: 0, // Continuous animation
     disableOnInteraction: false,
   },
-  speed: 4000, // Continuous scroll speed
+  speed: 4000, // Smooth infinite scrolling
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     480: {
       slidesPerView: 1,
